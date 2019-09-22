@@ -29,24 +29,12 @@
     </Screen>
     <Screen>
       <Type>Navigation</Type>
-      <ClassName>ComputersScreens.Screen_1_2</ClassName>
-      <DisplayName>Computers</DisplayName>
-      <FileName>Screen 1_2.xaml</FileName>
-      <Annotations />
-      <Position>
-        <X>24</X>
-        <Y>68</Y>
-      </Position>
-      <VisualTag>0</VisualTag>
-    </Screen>
-    <Screen>
-      <Type>Navigation</Type>
       <ClassName>ComputersScreens.Screen_1_3</ClassName>
       <DisplayName>Orders</DisplayName>
       <FileName>Screen 1_3.xaml</FileName>
       <Annotations />
       <Position>
-        <X>189</X>
+        <X>44</X>
         <Y>83</Y>
       </Position>
       <VisualTag>0</VisualTag>
@@ -58,8 +46,8 @@
       <FileName>Screen 1_4.xaml</FileName>
       <Annotations />
       <Position>
-        <X>314</X>
-        <Y>86</Y>
+        <X>213</X>
+        <Y>92</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -70,8 +58,8 @@
       <FileName>Screen 1_5.xaml</FileName>
       <Annotations />
       <Position>
-        <X>431</X>
-        <Y>50</Y>
+        <X>350</X>
+        <Y>86</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -80,13 +68,6 @@
     <Connection>
       <Source>ComputersScreens.Screen_1</Source>
       <Target>ComputersScreens.Screen_1_1</Target>
-      <Type>Navigation</Type>
-      <TransitionType>Fade</TransitionType>
-      <VisualTag>0</VisualTag>
-    </Connection>
-    <Connection>
-      <Source>ComputersScreens.Screen_1_1</Source>
-      <Target>ComputersScreens.Screen_1_2</Target>
       <Type>Navigation</Type>
       <TransitionType>Fade</TransitionType>
       <VisualTag>0</VisualTag>
@@ -114,13 +95,6 @@
     </Connection>
     <Connection>
       <Source>ComputersScreens.Screen_1_5</Source>
-      <Target>ComputersScreens.Screen_1_1</Target>
-      <Type>Navigation</Type>
-      <TransitionType>Fade</TransitionType>
-      <VisualTag>0</VisualTag>
-    </Connection>
-    <Connection>
-      <Source>ComputersScreens.Screen_1_2</Source>
       <Target>ComputersScreens.Screen_1_1</Target>
       <Type>Navigation</Type>
       <TransitionType>Fade</TransitionType>
@@ -186,7 +160,7 @@
   <ViewState>
     <Zoom>1</Zoom>
     <Center>
-      <X>351.69999999999993</X>
+      <X>231.50728485657129</X>
       <Y>78.485000000000014</Y>
     </Center>
   </ViewState>

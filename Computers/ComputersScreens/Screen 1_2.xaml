@@ -75,13 +75,6 @@
 				</LinearGradientBrush>
 			</Button.Background>
 		</Button>
-		<Button Margin="236.7,99.2,281.3,0" Content="Welcome" FontSize="18.667" VerticalAlignment="Top" Height="53.2" Background="#FF3C00FF">
-			<i:Interaction.Triggers>
-				<i:EventTrigger EventName="Click">
-					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_1"/>
-				</i:EventTrigger>
-			</i:Interaction.Triggers>
-		</Button>
-		<ListBox Margin="80,0,128,64" VerticalAlignment="Bottom" Height="164" ItemTemplate="{DynamicResource Collection1ItemTemplate}" ItemsSource="{Binding Collection1}"/>
+		<Button Margin="236.7,99.2,281.3,0" Content="Welcome" FontSize="18.667" VerticalAlignment="Top" Height="53.2" Background="#FF3C00FF"/>
 	</Grid>
 </UserControl>

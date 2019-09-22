@@ -9,7 +9,7 @@
 	Width="640" Height="480">
 
 	<Grid x:Name="LayoutRoot" Background="White">
-		<Button HorizontalAlignment="Right" Margin="0,0,101.5,50.34" VerticalAlignment="Bottom" Width="131.4" Height="54.36" Content="Welcome" FontSize="18.667">
+		<Button Margin="200,0,200,64" VerticalAlignment="Bottom" Height="64" Content="Welcome" FontSize="18.667" Background="#FFFF9D9D" Cursor="Hand">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_1"/>

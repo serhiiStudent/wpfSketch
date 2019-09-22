@@ -21,8 +21,7 @@
 	</UserControl.Resources>
 
 	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource DataSource}}">
-		<TextBox Margin="80,176,152,232" Style="{DynamicResource BasicTextBox-Sketch}" Text="Owner text sketch" TextWrapping="Wrap"/>
-		<Button HorizontalAlignment="Left" Margin="166.3,30.4,0,0" Width="122" Content="Orders" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+		<Button HorizontalAlignment="Left" Margin="88,30.4,0,0" Width="122" Content="Orders" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_3"/>
@@ -37,29 +36,14 @@
 				</LinearGradientBrush>
 			</Button.Background>
 		</Button>
-		<Button HorizontalAlignment="Left" Margin="29.5,30.4,0,0" Width="122" Content="Computers" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
-			<i:Interaction.Triggers>
-				<i:EventTrigger EventName="Click">
-					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_2"/>
-				</i:EventTrigger>
-			</i:Interaction.Triggers>
-			<Button.Background>
-				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-					<GradientStop Color="#FFF3F3F3" Offset="0"/>
-					<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
-					<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
-					<GradientStop Color="#FFFFE800" Offset="1"/>
-				</LinearGradientBrush>
-			</Button.Background>
-		</Button>
-		<Button Margin="301.5,30.4,216.5,0" Content="Owner" FontSize="18.667" VerticalAlignment="Top" Height="53.2" Background="Red">
+		<Button Margin="236.7,30.4,281.3,0" Content="Owner" FontSize="18.667" VerticalAlignment="Top" Height="53.2" Background="Red">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_4"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<Button HorizontalAlignment="Right" Margin="0,30.4,81.3,0" Width="122" Content="Computer&#xa;components" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+		<Button HorizontalAlignment="Right" Margin="0,30.4,126,0" Width="122" Content="Computer&#xa;components" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_5"/>
@@ -81,6 +65,15 @@
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<ListBox Margin="88,0,152,80" VerticalAlignment="Bottom" Height="140" ItemTemplate="{DynamicResource Collection2ItemTemplate}" ItemsSource="{Binding Collection2}"/>
+		<ListBox Margin="80,184,104,156" ItemTemplate="{DynamicResource Collection2ItemTemplate}" ItemsSource="{Binding Collection2}" RenderTransformOrigin="0.5,0.5">
+			<ListBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform AngleY="-0.456"/>
+					<RotateTransform/>
+					<TranslateTransform Y="-1.592"/>
+				</TransformGroup>
+			</ListBox.RenderTransform>
+		</ListBox>
 	</Grid>
 </UserControl>
