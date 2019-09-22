@@ -4,7 +4,7 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
-	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_1_Name"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" xmlns:ps="clr-namespace:Microsoft.Expression.Prototyping.SketchControls;assembly=Microsoft.Expression.Prototyping.SketchControls" x:Name="Screen_1_Name"
 	x:Class="ComputersScreens.Screen_1"
 	Width="640" Height="480">
 
@@ -16,5 +16,6 @@
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
+		<Image Margin="40,59.397,24,184" Source="SampleData/DataSource/DataSource_Files/5.jpg" Stretch="Fill"/>
 	</Grid>
 </UserControl>

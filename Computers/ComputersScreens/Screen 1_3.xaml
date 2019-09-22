@@ -7,9 +7,31 @@
 	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_1_3_Name"
 	x:Class="ComputersScreens.Screen_1_3"
 	Width="640" Height="480">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+			<DataTemplate x:Key="ItemTemplate">
+				<StackPanel>
+					<Image Source="{Binding Image}" HorizontalAlignment="Left" Height="64" Width="64"/>
+					<TextBlock Text="{Binding Name}"/>
+					<TextBlock Text="{Binding Price}"/>
+				</StackPanel>
+			</DataTemplate>
+		</ResourceDictionary>
+	</UserControl.Resources>
 
-	<Grid x:Name="LayoutRoot" Background="White">
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource DataSource}}">
 		<Button HorizontalAlignment="Left" Margin="166.3,30.4,0,0" Width="122" Content="Orders" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+			<Button.Background>
+				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+					<GradientStop Color="#FFF3F3F3" Offset="0"/>
+					<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+					<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+					<GradientStop Color="#FF6CEA00" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.Background>
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_3"/>
@@ -17,13 +39,21 @@
 			</i:Interaction.Triggers>
 		</Button>
 		<Button HorizontalAlignment="Left" Margin="29.5,30.4,0,0" Width="122" Content="Computers" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+			<Button.Background>
+				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+					<GradientStop Color="#FFF3F3F3" Offset="0"/>
+					<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+					<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+					<GradientStop Color="#FFFFE800" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.Background>
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_2"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<Button Margin="301.5,30.4,216.5,0" Content="Owner" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+		<Button Margin="301.5,30.4,216.5,0" Content="Owner" FontSize="18.667" VerticalAlignment="Top" Height="53.2" Background="Red">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_4"/>
@@ -31,13 +61,21 @@
 			</i:Interaction.Triggers>
 		</Button>
 		<Button HorizontalAlignment="Right" Margin="0,30.4,81.3,0" Width="122" Content="Computer&#xa;components" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+			<Button.Background>
+				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+					<GradientStop Color="#FFF3F3F3" Offset="0"/>
+					<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+					<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+					<GradientStop Color="#FF7400FF" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.Background>
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_5"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<Button Margin="236.7,99.2,281.3,0" Content="Welcome" FontSize="18.667" VerticalAlignment="Top" Height="53.2">
+		<Button Margin="236.7,99.2,281.3,0" Content="Welcome" FontSize="18.667" VerticalAlignment="Top" Height="53.2" Background="#FF3C00FF">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pb:NavigateToScreenAction TargetScreen="ComputersScreens.Screen_1_1"/>
@@ -45,5 +83,6 @@
 			</i:Interaction.Triggers>
 		</Button>
 		<TextBox Margin="80,176,152,232" Style="{DynamicResource BasicTextBox-Sketch}" Text="Orders text sketch" TextWrapping="Wrap"/>
+		<ListBox Margin="80,0,104,32" VerticalAlignment="Bottom" Height="196" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Collection}"/>
 	</Grid>
 </UserControl>

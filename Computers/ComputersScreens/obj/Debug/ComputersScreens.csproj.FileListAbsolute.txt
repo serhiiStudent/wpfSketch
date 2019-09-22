@@ -18,3 +18,7 @@ D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\Comput
 D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\Screen 1_3.g.cs
 D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\Screen 1_4.g.cs
 D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\Screen 1_5.g.cs
+D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\Computers.Screens_MarkupCompile.lref
+D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\ProjectDataSources.baml
+D:\studying\education\5сем\трпз-2\labs\New app\Computers\Computers\ComputersScreens\obj\Debug\SampleData\DataSource\DataSource.baml
