@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computers", "Computers\Computers.csproj", "{B61106BF-CE84-4A5D-8116-6A04D9E465DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputersScreens", "Computers\ComputersScreens\ComputersScreens.csproj", "{FA6D77AD-BDD0-4AF6-9FDF-D97BDF4ADBA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B61106BF-CE84-4A5D-8116-6A04D9E465DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61106BF-CE84-4A5D-8116-6A04D9E465DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61106BF-CE84-4A5D-8116-6A04D9E465DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61106BF-CE84-4A5D-8116-6A04D9E465DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6D77AD-BDD0-4AF6-9FDF-D97BDF4ADBA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6D77AD-BDD0-4AF6-9FDF-D97BDF4ADBA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6D77AD-BDD0-4AF6-9FDF-D97BDF4ADBA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6D77AD-BDD0-4AF6-9FDF-D97BDF4ADBA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
